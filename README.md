@@ -3,8 +3,8 @@
 2. run the kafka server using docker:
   ```
 docker run -p 9092:9092 \
-   -e KAFKA_ZOOKEEPER_CONNECT:<Private Ip>:2181 \
-   -e KAFKA_ADVERTISED_LISTEERS=PLAINTEXT://<Private Ip>:9092 \
+   -e KAFKA_ZOOKEEPER_CONNECT=<Private Ip>:2181 \
+   -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://<Private Ip>:9092 \
    confluentinc/cp-kafka
 ```
 3. change the Ip in the client.js file in the broker.
