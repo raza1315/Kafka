@@ -1,6 +1,6 @@
 const kafka=require("./client"); 
 const init=async()=>{
-const producer=kafka.Producer();
+const producer=kafka.producer();
 console.log("Connecting to Producer...");
 await producer.connect();
 console.log("Producer Connected!");
