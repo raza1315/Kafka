@@ -1,5 +1,8 @@
 1. run rhe zookeeper using docker:
-  ``` docker run -p 2181:2181 zookeeper ```
+  ```
+ docker run -p 2181:2181 zookeeper
+ ```
+
 2. run the kafka server using docker:
   ```
 docker run -p 9092:9092 \
